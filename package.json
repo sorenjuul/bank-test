@@ -1,0 +1,28 @@
+{
+  "name": "bank-test",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://sorenjuul.github.io/bank-test",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "npm-run-parallel": "^0.6.0",
+    "onchange": "^3.3.0",
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "start": "npm-run-parallel start-react prettier-watch",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prettier-watch": "onchange src/**/*.js -- prettier --write {{changed}}",
+    "start-react": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

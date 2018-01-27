@@ -1,1 +1,1 @@
-# bank-test
+# Bank Test App for Image Search
