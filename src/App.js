@@ -120,12 +120,12 @@ class App extends Component {
             )}
           </Header>
           <Content style={{ padding: "0 50px" }}>
-            <Row gutter={64 * 2}>
+            <Row gutter={32}>
               <Col span={24}>
                 {size(imageUrls) > 0 && (
                   <Card loading={loading} title="Search results">
                     {imageUrls.map(item => (
-                      <Card.Grid key={item.id}>
+                      <Card.Grid key={item.id} style={gridStyle}>
                         <img alt="" src={item.url} />
                       </Card.Grid>
                     ))}
