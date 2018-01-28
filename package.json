@@ -1,28 +1,27 @@
 {
   "name": "bank-test",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "http://sorenjuul.github.io/bank-test",
   "dependencies": {
-    "antd": "^3.1.5",
-    "lodash": "^4.17.4",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "antd": "3.1.5",
+    "lodash": "4.17.4",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "npm-run-parallel": "^0.6.0",
-    "onchange": "^3.3.0",
-    "prettier": "^1.10.2"
+    "babel-plugin-import": "1.6.3",
+    "gh-pages": "1.1.0",
+    "prettier": "1.10.2",
+    "react-app-rewired": "1.4.1",
+    "react-scripts": "1.1.0"
   },
   "scripts": {
-    "start": "npm-run-parallel start-react prettier-watch",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
-    "prettier-watch": "onchange src/**/*.js -- prettier --write {{changed}}",
-    "start-react": "react-scripts start",
+    "prettier": "prettier --write src/**/*.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   }

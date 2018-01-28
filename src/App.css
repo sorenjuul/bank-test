@@ -1,1 +1,29 @@
-@import '~antd/dist/antd.css';
+.app {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.header {
+  color: #ffffff;
+}
+
+.header__title {
+  color: #ffffff;
+}
+
+.tags {
+  padding: 24px 24px 16px 24px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.ant-tag {
+  margin-bottom: 8px;
+}
+
+.pagination {
+  padding: 24px 0;
+  text-align: center;
+}
