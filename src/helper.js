@@ -6,9 +6,9 @@ export function getImageUrls(data) {
     return {
       url: `https://farm${photoItem.farm}.staticflickr.com/${photoItem.server}/${photoItem.id}_${
         photoItem.secret
-      }.jpg`,
+      }_q.jpg`,
       id: photoItem.id
     };
   });
-  return imageUrls;
+  return { imageUrls, total: data.photos.total };
 }
