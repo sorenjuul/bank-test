@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import { searchFlickr } from './utils/api';
 import { getImageUrls } from './utils/helper';
 import size from 'lodash/size';
@@ -7,6 +6,7 @@ import parseInt from 'lodash/parseInt';
 import { Pagination, Layout } from 'antd';
 import Tags from './components/Tags';
 import ImageGrid from './components/ImageGrid';
+import './App.css';
 
 const { Header, Content } = Layout;
 
@@ -22,6 +22,7 @@ class App extends Component {
   searchImages = async (page, tags) => {
     const { tags: stateTags } = this.state;
     const searchTags = tags || stateTags;
+    // reset state if all tags have been deleted
     if (size(searchTags) === 0) {
       this.setState({
         imageUrls: [],
@@ -31,15 +32,19 @@ class App extends Component {
       });
       return;
     }
-    this.setState({ loading: true });
+    this.setState({
+      loading: true,
+      tags: searchTags,
+    });
+    //call API
     const data = await searchFlickr(searchTags.join(','), page);
+    //get UI formatted data
     const formattedData = getImageUrls(data);
     this.setState({
       imageUrls: formattedData.imageUrls,
       loading: false,
       page,
       total: parseInt(formattedData.total),
-      tags: searchTags,
     });
   };
 

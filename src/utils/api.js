@@ -6,6 +6,7 @@ export async function searchFlickr(searchTerm, page) {
     );
     data = await response.json();
   } catch (error) {
+    //If the endpoint fails return a empty object
     data = {};
   }
   return data;

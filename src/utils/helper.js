@@ -1,4 +1,4 @@
-import { get } from 'lodash';
+import get from 'lodash/get';
 
 export function getImageUrls(data) {
   const photo = get(data, 'photos.photo', []);
