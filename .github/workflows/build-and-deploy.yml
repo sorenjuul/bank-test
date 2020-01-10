@@ -16,13 +16,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: fregante/setup-git-token@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN_1 }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - uses: fregante/setup-git-token@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN_1 }}
+        name: The Bot
+        email: bot@bot.com  
     - name: npm build and deploy
       run: |
         npm install
