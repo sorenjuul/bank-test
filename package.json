@@ -11,10 +11,11 @@
   },
   "devDependencies": {
     "babel-plugin-import": "1.13.0",
+    "customize-cra": "0.9.1",
     "gh-pages": "2.1.1",
     "prettier": "1.19.1",
-    "react-app-rewired": "1.6.2",
-    "react-scripts": "1.1.5"
+    "react-app-rewired": "2.1.5",
+    "react-scripts": "3.3.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -25,5 +26,17 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "ci-deploy": "gh-pages -d build -u 'The Bot <bot@bot.com>'"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
