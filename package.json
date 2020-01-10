@@ -13,7 +13,7 @@
     "babel-plugin-import": "1.6.3",
     "gh-pages": "1.1.0",
     "prettier": "1.19.1",
-    "react-app-rewired": "1.4.1",
+    "react-app-rewired": "1.6.2",
     "react-scripts": "1.1.0"
   },
   "scripts": {
