@@ -22,13 +22,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - uses: fregante/setup-git-token@v1
       with:
-        token: ${{ secrets.GITHUB_TOKEN_1 }}
-        name: The Bot
-        email: bot@bot.com  
+        token: ${{ secrets.GITHUB_TOKEN_1 }} 
     - name: npm build and deploy
       run: |
         npm install
         npm run build
-        npm run deploy
+        npm run ci-deploy
       env:
         CI: true
