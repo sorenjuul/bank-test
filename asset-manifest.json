@@ -1,6 +1,25 @@
 {
-  "main.css": "static/css/main.a7570e82.css",
-  "main.css.map": "static/css/main.a7570e82.css.map",
-  "main.js": "static/js/main.25150fba.js",
-  "main.js.map": "static/js/main.25150fba.js.map"
+  "files": {
+    "main.css": "/bank-test/static/css/main.1ea4b673.chunk.css",
+    "main.js": "/bank-test/static/js/main.a4a9498d.chunk.js",
+    "main.js.map": "/bank-test/static/js/main.a4a9498d.chunk.js.map",
+    "runtime-main.js": "/bank-test/static/js/runtime-main.802d9ff2.js",
+    "runtime-main.js.map": "/bank-test/static/js/runtime-main.802d9ff2.js.map",
+    "static/css/2.a30fe899.chunk.css": "/bank-test/static/css/2.a30fe899.chunk.css",
+    "static/js/2.6e4b9ab2.chunk.js": "/bank-test/static/js/2.6e4b9ab2.chunk.js",
+    "static/js/2.6e4b9ab2.chunk.js.map": "/bank-test/static/js/2.6e4b9ab2.chunk.js.map",
+    "index.html": "/bank-test/index.html",
+    "precache-manifest.dd2af74641eed402f34f79a62ce2eb68.js": "/bank-test/precache-manifest.dd2af74641eed402f34f79a62ce2eb68.js",
+    "service-worker.js": "/bank-test/service-worker.js",
+    "static/css/2.a30fe899.chunk.css.map": "/bank-test/static/css/2.a30fe899.chunk.css.map",
+    "static/css/main.1ea4b673.chunk.css.map": "/bank-test/static/css/main.1ea4b673.chunk.css.map",
+    "static/js/2.6e4b9ab2.chunk.js.LICENSE": "/bank-test/static/js/2.6e4b9ab2.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.802d9ff2.js",
+    "static/css/2.a30fe899.chunk.css",
+    "static/js/2.6e4b9ab2.chunk.js",
+    "static/css/main.1ea4b673.chunk.css",
+    "static/js/main.a4a9498d.chunk.js"
+  ]
 }
