@@ -24,6 +24,6 @@
     "prettier": "prettier --write src/**/*.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "ci-deploy": "gh-pages --dist build --user 'The Bot <bot@bot.com>'"
+    "ci-deploy": "gh-pages -d build -u 'The Bot <bot@bot.com>'"
   }
 }
