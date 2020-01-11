@@ -25,7 +25,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN_1 }} 
     - name: npm build and deploy
       run: |
-        npm install
+        npm ci
         npm run build
         npm run ci-deploy
       env:
