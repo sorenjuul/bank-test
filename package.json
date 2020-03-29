@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://sorenjuul.github.io/bank-test",
   "dependencies": {
-    "antd": "3.26.14",
+    "antd": "4.1.0",
     "lodash": "4.17.15",
     "react": "16.13.1",
     "react-dom": "16.13.1"
